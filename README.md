@@ -36,39 +36,51 @@ MODUL 4
 |Total | 2618 | /20|
 
 ### VLSM Tree
+![image](https://user-images.githubusercontent.com/112471006/204089293-7833555f-e890-4132-be1f-7fddf4da3a20.png)
+![image](https://user-images.githubusercontent.com/112471006/204089339-8bcd6b75-f30c-44ee-a3fd-152545b26421.png)
+![image](https://user-images.githubusercontent.com/112471006/204089147-dd3345e7-4a9c-4500-9716-1ff24ae7e6e3.png)
+![image](https://user-images.githubusercontent.com/112471006/204089175-a279caee-1190-4f7b-9509-67b925dbe5c2.png)
 
-| Subnet | Node          | IP          | Subnet Mask   | Length |
-| ------ | --------------| ----------- | ------------- | ------ |
-|A1      | The Minister  | 10.39.0.1   | 255.255.252.0 | /22    |
-|        | Guideau       | 10.39.0.2   | 255.255.252.0 |        |
-|A2      | The Dauntless | 10.39.8.1   | 255.255.255.0 | /24    |
-|        | Phanora       | 10.39.8.2   | 255.255.255.0 |        |
-|        | Johan         | 10.39.8.3   | 255.255.255.0 |        |
-|A3      | The Dauntless |10.39.11.193 |255.255.255.252| /30    |
-|        | The Minister  |10.39.11.194 |255.255.255.252|        |
-|A4      | The Minister  |10.39.11.197 |255.255.255.252| /30    |
-|        | The Order     |10.39.11.198 |255.255.255.252|        |
-|  A5    | The Order     |10.39.11.129 |255.255.255.192| /26    |
-|        |  Ashaf        |10.39.11.30  |255.255.255.192|        |
-| A6     | The Order     |10.39.11.201 |255.255.255.252| /30    |
-|        |The Resonance  |10.39.11.202 |255.255.255.252|        |
-| A7     |The Resonance  |10.39.11.205 |255.255.255.252| /30    |
-|        |The Instrument |10.39.11.206 |255.255.255.252|        |
-| A8     |The Instrument |10.39.10.1   |255.255.255.128|  /25   |
-|        |Matt Cugat     |10.39.10.2   |255.255.255.128|        |
-|   A9   |The Instrument |10.39.11.209 |255.255.255.252|/30     |
-|        |The Firefist   |10.39.11.210 |255.255.255.252|        |
-|   A10  |The Firefist   | 10.39.9.1   |255.255.255.0  | /24    |
-|        | The Queen     | 10.39.9.2   |255.255.255.0  |        |
-|        |  Keith        | 10.39.9.3   | 255.255.255.0 |        |
-| A11    |               |             |               |        |
-|        |               |             |               |        |
-|        |               |             |               |        |
-|        |               |             |               |        |
-|        |               |             |               |        |
+### CIDR
+- A2 (/24) & A3 (/30) = B1 (/23)
+- A10 (/24) & A11 (/30) = B2 (/23)
+- A17 (/25) & A18 (/25) = B3 (/24) 
 
+![image](https://user-images.githubusercontent.com/112471006/204089430-ab4a0b2f-e406-4b60-bcf3-532193d38786.png)
+- B1 (/23) & A1 (/22) = C1 (/21)
+- B2 (/23) & A12 (/23) = C2 (/22)
+- B3 (/24) & A16 (/30) = C3 (/23)
 
+![image](https://user-images.githubusercontent.com/112471006/204089488-ce270978-a590-4039-9a15-da9e1199c079.png)
+- C1 (/21) & A4 (/30) = D1 (/20)
+- C2 (/22) & A9 (/30) = D2 (/21)
 
+![image](https://user-images.githubusercontent.com/112471006/204089612-ccdacff6-b93e-47ba-a047-b57bcc4be7cf.png)
+- D1 (/20) & A5 (/26) = E1 (/19)
+- D2 (/21) & C3 (/23) = E2 (/20)
 
+![image](https://user-images.githubusercontent.com/112471006/204089620-b1704e1a-684a-4c65-86c6-524b640af6aa.png)
+- E1 (/19) & A6 (/30) = F1 (/18)
+- E2 (/20) & A8 (/25) = F2 (/19)
+- A14 (/30) & A15 (/23) = F3 (/22)
+
+![image](https://user-images.githubusercontent.com/112471006/204089630-9cb3c22f-5835-445b-9796-8172cfe839d9.png)
+- F2 (/19) & A7 (/30) = G1 (/18)
+- F3 (/22) & A13 (/30) = G2 (/21)
+
+![image](https://user-images.githubusercontent.com/112471006/204089673-9fb8d713-1b01-4943-b7bb-2a5eac8df90f.png)
+- G1 (/18) & G2 (/21) = H1 (/17)
+
+![image](https://user-images.githubusercontent.com/112471006/204089683-b19c6d4c-034d-4656-8e83-c517e116b08a.png)
+- H1 (/17) & F1 (/18) = I1 (/16)
+
+![image](https://user-images.githubusercontent.com/112471006/204089697-ca6352f6-baf2-42e4-8569-40b8eeba9d39.png)
+
+### CIDR Tree
+![image](https://user-images.githubusercontent.com/112471006/204089713-7b8a7b63-c886-4b73-a03f-deebb166130a.png)
+![image](https://user-images.githubusercontent.com/112471006/204089725-31bc8c1b-63f6-490e-8cc5-61497df132ce.png)
+![image](https://user-images.githubusercontent.com/112471006/204089731-f3712246-1720-49b6-b7d9-cf217253fd38.png)
+![image](https://user-images.githubusercontent.com/112471006/204089741-8c0edf37-bf74-4fbb-825f-8819e95077b3.png)
+![image](https://user-images.githubusercontent.com/112471006/204089747-e83c566e-6a03-46e3-8123-2fbde61d82ed.png)
 
 
