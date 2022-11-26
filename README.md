@@ -13,4 +13,13 @@ MODUL 4
 ### VLSM
 ![soal shift 4 1](https://user-images.githubusercontent.com/112471006/204075156-7aab9b73-b533-4454-b974-8f19314f545a.png)
 
+| Subnet | IP Count  | Netmask |
+| ------- | --- | --- |
+|A1 | 1001 | /22 |
+|A2 | 251 | /24 |
+|A3 | 2 | /30 |
+|A4 | 2 | /30 |
+|A5 | 51 | /26 |
+|A6 | 2 | /30 |
+|A7 | 2 | /30 |
 
